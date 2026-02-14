@@ -27,7 +27,7 @@ grr = scatter_matrix(iris_dataframe, c=y_train, figsize = (10,10), marker='o',hi
 
 # KNN is a neighbors verificationa and comparision algorithm which will predict the data acuurately
 knn = KNeighborsClassifier(n_nearest = 1)
-knn.fit(x_train,y_train)
+knn.fit(X_train,y_train)
 
 #Verification by using a new data point
 x_new = np.array([[5, 2.9, 1, 0.2]])
