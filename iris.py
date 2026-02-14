@@ -11,12 +11,12 @@ from sklearn.neighbors import KNeighborsClassifier
 iris_dataset = load.iris()
 
 #Training and testing data 
-x_train,x_test,y_train,y_split = train_test_split(iris_dataset['data'],iris_dataset['target'], random_state = 0)
+X_train,X_test,y_train,y_split = train_test_split(iris_dataset['data'],iris_dataset['target'], random_state = 0)
 
 #To see how many data points were allocated for training and testing
-print("X_train shape: {}".format(x_train.shape))
+print("X_train shape: {}".format(X_train.shape))
 print("y_train shape: {}".format(y_train.shape))
-print("X_test shape: {}".format(x_test.shape))
+print("X_test shape: {}".format(X_test.shape))
 print("y_test shape: {}".format(y_test.shape))
 
 #Generating a data frame from the dataset
